@@ -30,16 +30,16 @@
 
                 <label class="date-type">
                 Pick a date
-                <input  class= "date" type="number"  min="1" max="31" name="date" placeholder="DD" required>
-                <input  class= "date" type="number"  min="1" max="12" name="date" placeholder="MM" required>
-                <input  class= "date" type="number"  min="2021"  max="2099" name="date" placeholder="YYYY" required>
+                <input  class= "date" type="number"  min="1" max="31" name="date" placeholder="DD" >
+                <input  class= "date" type="number"  min="1" max="12" name="date" placeholder="MM" >
+                <input  class= "date" type="number"  min="2021"  max="2099" name="date" placeholder="YYYY" >
                 </label>
                 <br>
                 <br>
                 <label class="time-type">
                         Pick a time
-                        <input  class= "date" type="number" name="date" placeholder="09" required>
-                        <input  class= "date" type="number" name="date" placeholder="00" required>
+                        <input  class= "date" type="number" name="date" placeholder="09" >
+                        <input  class= "date" type="number" name="date" placeholder="00" >
 
                         <select name="am-pm" class="date">
                             <option >AM</option>
@@ -52,18 +52,20 @@
                     <button id="minus-but"> - </button>
                     <!-- <label id="qtybox" val> 4 people</label> -->
                     <input type="text" id="qtybox" readonly value="0 PEOPLE"> <button id="plus-but"> + </button>
-
-
-                    <div class="mkae-reservation">
-
-
-                        <button class="btn btc" id="mkbut"> MAKE RESERVATION</button>
-                    </div>
                 </div>
-            </form>
 
-            <script src="script.js">
-            </script>
+
+                <div class="mkae-reservation">
+
+
+                    <button class="btn btc" id="mkbut"> MAKE RESERVATION</button>
+                </div>
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        </form>
+
+        <script src="script.js">
+        </script>
 </body>
 
 </html>

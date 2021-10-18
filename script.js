@@ -8,7 +8,8 @@ let qtybox = document.querySelector('#qtybox');
 
 // increment button
 plusbut.addEventListener('click', () => {
-    qtybox.value = parseInt(qtybox.value) + 1;
+
+    qtybox.value = parseInt(qtybox.value) + 1 + " PEOPLE";
 
 });
 
@@ -18,7 +19,7 @@ minusbut.addEventListener('click', () => {
     if (qtybox.value <= 0) {
         qtybox.value = 0
     } else {
-        qtybox.value = parseInt(qtybox.value) - 1;
+        qtybox.value = parseInt(qtybox.value) - 1 + " PEOPLE";
 
     }
 });
