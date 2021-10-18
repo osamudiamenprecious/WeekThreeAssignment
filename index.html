@@ -15,30 +15,31 @@
 
 
         <div class="reserve-form card">
+
             <form>
                 <div class="form-control">
 
-                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="name" placeholder="Name" required>
                 </div>
 
 
                 <div class="form-control">
 
-                    <input type="email" name="email" placeholder="Email">
+                    <input type="email" name="email" placeholder="Email" required>
                 </div>
 
                 <label class="date-type">
                 Pick a date
-                <input  class= "date" type="day" name="date" placeholder="DD">
-                <input  class= "date" type="day" name="date" placeholder="MM">
-                <input  class= "date" type="year" name="date" placeholder="YYYY">
+                <input  class= "date" type="number"  min="1" max="31" name="date" placeholder="DD" required>
+                <input  class= "date" type="number"  min="1" max="12" name="date" placeholder="MM" required>
+                <input  class= "date" type="number"  min="2021"  max="2099" name="date" placeholder="YYYY" required>
                 </label>
                 <br>
                 <br>
                 <label class="time-type">
                         Pick a time
-                        <input  class= "date" type="number" name="date" placeholder="09">
-                        <input  class= "date" type="number" name="date" placeholder="00">
+                        <input  class= "date" type="number" name="date" placeholder="09" required>
+                        <input  class= "date" type="number" name="date" placeholder="00" required>
 
                         <select name="am-pm" class="date">
                             <option >AM</option>
@@ -51,36 +52,18 @@
                     <button id="minus-but"> - </button>
                     <!-- <label id="qtybox" val> 4 people</label> -->
                     <input type="text" id="qtybox" readonly value="0 PEOPLE"> <button id="plus-but"> + </button>
+
+
+                    <div class="mkae-reservation">
+
+
+                        <button class="btn btc" id="mkbut"> MAKE RESERVATION</button>
+                    </div>
                 </div>
-                <!-- <div class="verline">
-                    <hr>
-                </div> -->
-                <!-- <div class="add">
-                <div class="flex1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="3"><path fill="#9E7F66" d="M6.425 2.977V.601H.629v2.376z"/></svg>
+            </form>
 
-                </div>
-                <div class="flex1">
-
-                    <input id="add1" type="text" placeholder="4 people">
-                </div>
-
-                <div class="flex1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"><path fill="#9E7F66" d="M6.227 10.156V6.727h3.429V4.342H6.227V.913H3.842v3.429H.413v2.385h3.429v3.429z"/></svg>
-                </div>
-                </div> -->
-
-                <div class="mkae-reservation">
-
-
-                    <button class="btn btc" id="mkbut"> MAKE RESERVATION</button>
-                </div>
-        </div>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        </form>
-
-        <script src="script.js">
-        </script>
+            <script src="script.js">
+            </script>
 </body>
 
 </html>
