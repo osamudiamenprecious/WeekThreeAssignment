@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM ASSIGNMENT</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="form-container">
+
+
+        <div class="reserve-form card">
+            <form>
+                <div class="form-control">
+
+                    <input type="text" name="name" placeholder="Name">
+                </div>
+
+
+                <div class="form-control">
+
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+
+                <label class="date-type">
+                Pick a date
+                <input  class= "date" type="day" name="date" placeholder="DD">
+                <input  class= "date" type="day" name="date" placeholder="MM">
+                <input  class= "date" type="year" name="date" placeholder="YYYY">
+                </label>
+                <br>
+                <br>
+                <label class="time-type">
+                        Pick a time
+                        <input  class= "date" type="number" name="date" placeholder="09">
+                        <input  class= "date" type="number" name="date" placeholder="00">
+
+                        <select name="am-pm" class="date">
+                            <option >AM</option>
+                            <OPtion>PM</OPtion>
+
+                        </select>
+                </label>
+
+                <div class="people">
+                    <button id="minus-but"> - </button>
+                    <!-- <label id="qtybox" val> 4 people</label> -->
+                    <input type="text" id="qtybox" readonly value="0 PEOPLE"> <button id="plus-but"> + </button>
+                </div>
+                <!-- <div class="verline">
+                    <hr>
+                </div> -->
+                <!-- <div class="add">
+                <div class="flex1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="3"><path fill="#9E7F66" d="M6.425 2.977V.601H.629v2.376z"/></svg>
+
+                </div>
+                <div class="flex1">
+
+                    <input id="add1" type="text" placeholder="4 people">
+                </div>
+
+                <div class="flex1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"><path fill="#9E7F66" d="M6.227 10.156V6.727h3.429V4.342H6.227V.913H3.842v3.429H.413v2.385h3.429v3.429z"/></svg>
+                </div>
+                </div> -->
+
+                <div class="mkae-reservation">
+
+
+                    <button class="btn btc" id="mkbut"> MAKE RESERVATION</button>
+                </div>
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        </form>
+
+        <script src="script.js">
+        </script>
+</body>
+
+</html>
